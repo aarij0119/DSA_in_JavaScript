@@ -116,9 +116,76 @@
 // console.log(Math.pow(2,5));//32
 // console.log(Math.pow(3,5));//243
 
-let a = 11;
-let b = 22;
-let c = a + b + a++ + b++ + ++a + ++b
-console.log("a = " + a);//13
-console.log("b = " + b);//24;
-console.log("c = " + c);// 103
+// let a = 11;700
+// let b = 22;
+// let c = a + b + a++ + b++ + ++a + ++b
+// console.log("a = " + a);//13
+// console.log("b = " + b);//24;
+// console.log("c = " + c);// 103
+
+// Claculate electrucity bill
+// let bill = prompt("Enter the electricity bill");
+// bill = Number(bill);
+// let amount = 0;
+// if(bill >= 400){
+//     amount = (bill-400) * 13 // 3900
+//     bill = 400
+// }
+// if(bill > 200 && bill <= 400){
+//     amount += (bill-200) * 8 // 1600
+//     bill = 200
+// }
+// if(bill > 100 && bill <= 200){
+//     amount += (bill-100) * 6 // 600
+//     bill = 100
+// }
+// amount += bill*4
+// console.log(amount);
+
+
+// calculate notes
+// let amount = prompt("Enter your amount");
+// amount = Number(amount);
+// if(amount >= 500){
+//    console.log("500 notes ", Math.floor(amount/500));
+//    amount = amount%500
+// }
+// if(amount >= 200){
+//     console.log("200 notes ",Math.floor(amount/200));
+//     amount = amount%200
+// } 
+// if(amount >= 100){
+//     console.log("100 notes ",Math.floor(amount/100));
+//     amount = amount%100
+// }
+// if(amount >= 50){
+//     console.log("50's notes ",Math.floor(amount/50));
+//     amount = amount%50
+// }
+// if(amount >= 20){
+//     console.log("20's notes ",Math.floor(amount/20));
+//     amount = amount%20
+// }
+// if(amount >= 10){
+//    console.log("10's notes",Math.floor(amount/10));
+// }4
+// console.log(amount);
+
+// Ternary Operators
+// console.log(12>18 ? "Yes" : "No");
+
+//Nested ternary operator
+// let num = 10;
+// console.log(num>0?"positive": num<0? "negative":"zero");
+// console.log(+true + 1);
+// console.log(typeof +false);//number
+let stars = '';
+for(let i = 0; i < 5; i++){
+    stars += " *"
+    for(let j = 0; j < 5; j++){
+        stars += "*";
+    }
+    stars += '\n'
+}
+console.log(stars)
+
