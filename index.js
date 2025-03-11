@@ -179,13 +179,159 @@
 // console.log(num>0?"positive": num<0? "negative":"zero");
 // console.log(+true + 1);
 // console.log(typeof +false);//number
-let stars = '';
-for(let i = 0; i < 5; i++){
-    stars += " *"
-    for(let j = 0; j < 5; j++){
-        stars += "*";
-    }
-    stars += '\n'
-}
-console.log(stars)
+// let stars = '';
+// for(let i = 0; i < 5; i++){
+//     stars += " *"
+//     for(let j = 0; j < 5; j++){
+//         stars += "*";
+//     }
+//     stars += '\n'
+// }
+// console.log(stars);
 
+//reverse a number
+
+// let n = prompt("Enter a number");
+// if(n === "" || n === null){
+//     console.log("Plesaee enter a number");
+// }else if(isNaN(n)){
+//     console.log("please enter a valid no.")
+// }else if(n > 0){
+//     let reverse = 0;
+//     while(n > 0){
+//         let rem = n % 10;
+//         reverse = reverse * 10 + rem;
+//         n = Math.floor(n / 10);
+//     }
+//     console.log("Reverse no is ", reverse);
+// } else {
+//     console.log("Please enter a positive no.");
+// }
+
+
+
+// let arr = new Array(5);
+
+// for(let i = 0; i < arr.length; i++){
+//     let ans = Number(prompt("Enter a number"));
+//     arr[i] = ans
+// }
+// console.log(arr);1
+
+
+// Sum of an Array
+// let arr = [10,20,30,40,50];
+// let sum = 0 ;
+// for(let i = 0; i <arr.length; i++){
+//     sum += arr[i];
+// }
+// console.log(sum);
+
+// Find the largest number in an array
+
+// let arr = [120,200,400,500,1900,1200];
+// let max = arr[0];
+
+// for(let i = 1;  i < arr.length; i++){
+// if(max < arr[i]){
+//     max = arr[i]
+// }
+// }
+// console.log(max)
+
+// find minimum element in an array
+
+// let array = [12,13,14,19,20,21,1];
+// let min = array[0];
+// for(let i = 1; i < array.length; i++){
+//     if(min > array[i]){
+//         min = array[i]
+//     }
+// }
+// console.log(min);
+
+// let arr = [10,30,40,40,40];
+// let max = arr[0];
+// let smax = arr[1];
+
+// for(let i = 2; i < arr.length; i++){
+//     if(arr[i] > max){
+//         max = arr[i];
+//     }else if(arr[i] > smax && max !== arr[i]){
+//         smax = arr[i]
+//     }
+// }
+// console.log(max);
+// console.log(smax);
+
+
+//Reverse array with extra space
+// let arr = [10,20,30,40,50,60];
+// let temp = new Array(arr.length);
+
+// let j = 0;
+// for(let i = arr.length - 1; i >= 0; i--){
+//     temp[j] = arr[i]
+//     j++
+// }
+
+// console.log(temp);
+
+
+// let arr = [10,20,30,40,50];
+// let i = 0;
+// let j = arr.length - 1;
+
+// while(i!=j){
+//     let temp = arr[i];
+//     arr[i]= arr[j]
+//     arr[j] = temp
+//     i++
+//     j--
+// }
+// console.log(arr);
+
+// let arr = [10,20,30,40,50,60,70,80,90,100];
+// let i = 0;
+// let j = arr.length - 1;
+
+// while(i<j){
+//     let temp = arr[i];
+//     arr[i] = arr[j]
+//     arr[j] = temp
+//     i++
+//     j--
+// }
+// console.log(arr)
+
+// let arr = [1,0,1,0,0,0,0,1,1,1,0];
+// let i = 0
+// let j = 0;
+
+// while(i < arr.length){
+//     if(arr[i] == 0){
+//         let temp = arr[i]
+//         arr[i] = arr[j]
+//         arr[j] = temp
+//         j++
+//     }
+//     i++
+// }
+
+// console.log(arr)
+
+
+let arr = [-1,2,-3,4,-5,6,-7,8,-9,10,-11,12,-13,14,-15];
+
+let i = 0;
+let j = 0;
+while(i < arr.length){
+    if(arr[i] < 0){
+        let temp = arr[i]
+        arr[i] = arr[j]
+        arr[j] = temp
+        j++
+    }
+    i++
+}
+console.log(arr)
