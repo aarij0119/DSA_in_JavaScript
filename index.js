@@ -321,17 +321,79 @@
 // console.log(arr)
 
 
-let arr = [-1,2,-3,4,-5,6,-7,8,-9,10,-11,12,-13,14,-15];
+// let arr = [-1,2,-3,4,-5,6,-7,8,-9,10,-11,12,-13,14,-15];
 
-let i = 0;
-let j = 0;
-while(i < arr.length){
-    if(arr[i] < 0){
-        let temp = arr[i]
-        arr[i] = arr[j]
-        arr[j] = temp
-        j++
+// let i = 0;
+// let j = 0;
+// while(i < arr.length){
+//     if(arr[i] < 0){
+//         let temp = arr[i]
+//         arr[i] = arr[j]
+//         arr[j] = temp
+//         j++
+//     }
+//     i++
+// }
+// console.log(arr);
+
+// P Question 1 
+// Target that the sum of two element is 9 
+// let arr = [2, 7, 11, 15];
+
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//         if (arr[i] + arr[j] === 9) {
+//             console.log(`Pair found: (${arr[i]}, ${arr[j]})`);
+//             console.log([arr[i], arr[j]])
+//         }
+//     }
+// }
+
+// P Question 2
+// Trget to find that the sum of two element is 6
+
+// let array = [1, 3, 5, 2, 3];
+// let numbers = [];
+// for (let i = 0; i < array.length; i++) {
+//     for (let j = i + 1; j < array.length; j++) {
+//         if (array[i] + array[j] === 6) {
+//             numbers.push(array[i], array[j])
+//         }
+//     }
+// }
+// console.log(numbers);
+
+
+// P Question 3 find duplicate and remove it
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 12, 12, 2, 3, 1];
+// let result = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//     let isDuplicate = false;
+//     for (let j = 0; j < arr.length; j++) {
+//         if (arr[i] === result[j]) {
+//             // console.log(arr[i],arr[j])
+//             isDuplicate = true;
+//             break;
+//         }
+//     }
+//     if (!isDuplicate) {
+//         result.push(arr[i]);
+//     }
+// }
+
+// console.log(result);
+
+let arr = [1,0,6,10,2,5,6,8,3];
+
+for(let i = 0; i < arr.length; i++){
+    for(let j = i + 1; j < arr.length; j++){
+        if(arr[i] > arr[j]){
+            let temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp
+        }
     }
-    i++
 }
-console.log(arr)
+console.log(arr);
