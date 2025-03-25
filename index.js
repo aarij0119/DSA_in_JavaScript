@@ -385,15 +385,22 @@
 
 // console.log(result);
 
-let arr = [1,0,6,10,2,5,6,8,3];
+// let arr = [1,0,6,10,2,5,6,8,3];
 
-for(let i = 0; i < arr.length; i++){
-    for(let j = i + 1; j < arr.length; j++){
-        if(arr[i] > arr[j]){
-            let temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp
-        }
-    }
-}
-console.log(arr);
+// for(let i = 0; i < arr.length; i++){
+//     for(let j = i + 1; j < arr.length; j++){
+//         if(arr[i] > arr[j]){
+//             let temp = arr[i];
+//             arr[i] = arr[j];
+//             arr[j] = temp
+//         }
+//     }
+// }
+// console.log(arr);
+
+let array = [1,2,3,4,5,6,7,8,9,12];
+array.push(15);
+array.pop();
+array.shift();
+array.unshift(12);
+console.log(array)
