@@ -398,9 +398,89 @@
 // }
 // console.log(arr);
 
-let array = [1,2,3,4,5,6,7,8,9,12];
-array.push(15);
-array.pop();
-array.shift();
-array.unshift(12);
-console.log(array)
+// let array = [1,2,3,4,5,6,7,8,9,12];
+// array.push(15);
+// array.pop();
+// array.shift();
+// array.unshift(12);
+// console.log(array);
+
+// let number = 9;
+// console.log(Math.sqrt(number));
+
+// let num = [];
+// let sum = 0;
+// for(let i = 0; i < 5; i++){
+//     num[i] = i + 1
+//     sum += num[i] 
+//  }
+//  console.log(num);
+//  console.log(sum);
+
+// Creting array from an string 
+
+// let str = 'Hello I am Aarij';
+// str = str.split('')
+// for(let i = 0; i < str.length; i++){
+//     console.log(str[i])
+// }
+
+// let nums = [9,1,2,3,4,5,6];
+// console.log(nums)
+// let reduce = nums.shift()
+// console.log(nums);
+// console.log(reduce)
+
+// let numbers = [1,2,3,7,8,9];
+// console.log(numbers)
+// let newnumbers = [4,5,6]
+// console.log(numbers)
+// let fullnumbers = numbers.splice(3,0,newnumbers);
+// console.log(numbers)
+
+// let nums = [1,2,3,100,200,300,400,4,5];
+// nums.splice(3,4);
+// console.log(nums)
+
+// let names = ["Billa","Riyaz","Aarij","Aehtasham","Mango","Raju","Jin","Iblees"];
+// console.log(names);
+// names.sort()
+// console.log(names)
+
+// let numbers = [3,4,1,100,200,2];
+
+// function compare (num1,num2){
+//     return num1 - num2
+// }
+// numbers.sort(compare);
+// console.log(numbers);
+
+
+//let arr = [1,2,4,5,6];
+//let array = arr.every(); // This also show same thing to fix that create a function and put it into every
+//console.log(array) // this wiil show undefined
+// function square(num){
+//     console.log(num, num * num)
+// };
+// arr.forEach(square);
+
+// arr.forEach((num)=>{
+//     console.log( num, num * num)
+// });
+
+// Two dimension array
+
+let grades = [[89,77,78],[76,82,81],[91,94,89]];
+let total = 0;
+let average = 0;
+
+for(let col = 0; col < grades.length; col++){
+    // console.log("column is ",grades[col]);
+    for(let row = 0; row < grades[col].length; row++){
+        // console.log("Row is ", grades[row])
+        total += grades[row][col]
+        average = total / grades[col].length
+    }
+}
+console.log("Sum of no. is ", total);
+console.log("The average is" , Math.floor(average));
