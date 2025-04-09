@@ -470,17 +470,118 @@
 
 // Two dimension array
 
-let grades = [[89,77,78],[76,82,81],[91,94,89]];
-let total = 0;
-let average = 0;
+// let grades = [[89,77,78],[76,82,81],[91,94,89]];
+// let total = 0;
+// let average = 0;
 
-for(let col = 0; col < grades.length; col++){
-    // console.log("column is ",grades[col]);
-    for(let row = 0; row < grades[col].length; row++){
-        // console.log("Row is ", grades[row])
-        total += grades[row][col]
-        average = total / grades[col].length
-    }
+// for(let col = 0; col < grades.length; col++){
+//     // console.log("column is ",grades[col]);
+//     for(let row = 0; row < grades[col].length; row++){
+//         // console.log("Row is ", grades[row])
+//         total += grades[row][col]
+//         average = total / grades[col].length
+//     }
+// }
+// console.log("Sum of no. is ", total);
+// console.log("The average is" , Math.floor(average));
+
+
+
+//Array Question
+
+// Question 1
+
+// let number = [];
+
+// let times = 0;
+// while(times < 10){
+//    let usernumber =  Number(prompt("Enter a number"));
+//    number.push(usernumber)
+//     times++
+// }
+// console.log(number);
+
+// Question 2
+
+// let arr = [10, 20, 30, 40, 21, 59, 90];
+// let userNumber = Number(prompt("Enter a number"));
+// let found = false;
+
+// let i = 0; 
+// while(i < arr.length){
+// if(userNumber === arr[i]){
+//     found = true;
+//     break;
+// }
+// i++
+// }
+// if(found){
+//     console.log("Found", found)
+// }
+// else{
+//     console.log("Sorry not found")
+// }
+
+
+// Question 1 Left Rotatin by one element
+
+// let arr = [1,2,3,4,5];
+
+// let copy = arr[0];
+// for(let i = 0; i < arr.length; i++){
+//     arr[i] = arr[i+1];
+// }
+// arr[arr.length-1] = copy
+
+// console.log(arr);
+
+// Question 2 Right rotatino by one element
+
+// let arr = [1,2,3,4,5];
+
+// let copy = arr[arr.length - 1];
+
+// for(let i = arr.length -1 ; i > 0; i--){
+//     arr[i] = arr[i - 1];
+// }
+// arr[0] = copy
+// console.log(arr)
+
+// Question 2 Left rotation by k element
+
+// let arr = [1, 2, 3, 4, 5];
+// let k = 3
+// k = k % arr.length
+// for (let j = 0; j < k; j++) {
+//     let copy = arr[0];
+//     for (let i = 0; i < arr.length - 1; i++) {
+//         arr[i] = arr[i + 1];
+//     }
+//     arr[arr.length - 1] = copy
+// }
+
+// console.log(arr);
+
+// Question 3 Right rotation by k element // Homework Question
+
+// let arr = [1,2,3,4,5];
+// let k = 2;
+// k = k % arr.length
+// let copy = arr[arr.length - 1];
+// for(let i = arr.length -1; i > 0; i--){
+//     arr[i] = arr[i - 1];
+// }
+// arr[0] = copy
+// console.log(arr)
+
+// Short Method of upper question
+let array = [1,2,3,4,5];
+let temp = [];
+let k = 2
+for(let i = 0; i < array.length; i++){
+    temp[i] = array[(i+k) % array.length]
 }
-console.log("Sum of no. is ", total);
-console.log("The average is" , Math.floor(average));
+console.log("Temp",temp);
+
+// Q = homework Right rotation by k step
+
